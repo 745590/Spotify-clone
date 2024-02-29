@@ -21,7 +21,7 @@ body {
   border-radius: 10px;
 }
 .columb-b {
-  height: 578px;
+  height: 600px;
   width: 72%;
   background-color: #121212;
   border-radius: 10px;
@@ -92,7 +92,7 @@ body {
 }
 .library {
   background-color: #121212;
-  height: 63%;
+  height: 80%;
   border-radius: 10px;
 }
 .icon-c {
@@ -128,11 +128,23 @@ body {
 .playlist {
   padding-left: 20px;
   background-color: #121212;
-  height: 50px;
+  height: 130px;
   margin-top: 50px;
   overflow-y: scroll;
   display: flex;
   flex-wrap: wrap;
+}
+.playlist::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+.playlist::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+.playlist::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
 }
 .playlist h3{
     font-size: 18px;
@@ -143,6 +155,10 @@ body {
     margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
+    background-color: #ffffff10;;
+    padding-left: 20px;
+    padding-top: 20px;
+    border-radius:10px;
 }
 .box button {
   height: 30px;
@@ -173,7 +189,6 @@ body {
     display: flex;
     justify-content: center;
     align-items:center ;
-    margin-top: 40px;
   }
   .links button:hover{
     height: 38px;
@@ -182,7 +197,135 @@ body {
     font-weight: bolder;
   }
   .columb-b nav{
-    height: 60px;
+    height: 70px;
     display: flex;
-    
+    align-items: center;
+    width: 100%;
   }
+  .columb-b nav .angle{
+    display: flex;
+    font-weight: 100;
+    height: 40px;
+    width: 250px;
+  }
+  .columb-b nav .angle i {
+     font-size: 18px;
+     margin-left: 30px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     cursor: not-allowed;
+  }
+nav .navlink{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 350px;
+}
+nav a {
+  font-size: 18px;
+  color: #ffffff50;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: 200;
+}
+nav a:hover {
+  font-weight: 700;
+  color: #ffffff;
+}
+nav button {
+  height: 40px;
+  width: 100px;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+
+}
+nav button:hover{
+  transform: 2s;
+  height: 42px;
+  width: 102px;
+  background-color: #fffffff5;
+}
+.song{
+  background-color:#7b7a7a1b;
+  padding-top: 10px;
+}
+.album{
+  height:250px;
+  width: 17%;
+  background-color: #38343430;
+  padding: 20px;
+  border-radius: 10px;
+  margin-right: 20px;
+  transition: 1s;
+  cursor: pointer;
+}
+.album:hover{
+  background-color: #313131;
+}
+.song h4{
+  margin-top: 10px;
+  height: 35px;
+}
+.song p{
+  font-size: 14px;
+  height: 30px;
+}
+.li{
+  margin-left: 40px;
+  width: 800px;
+   height: 40px;
+   display: flex;
+}
+.li:hover{
+  text-decoration:underline;
+  cursor: pointer;
+}
+.list{
+  display: flex;
+  width: 100%;
+  height: 280px;
+  background-color:#1D1D1D;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.album img{
+  border-radius: 10px; 
+  height: 120px; 
+  width: 120px;
+}
+.Show{
+  font-size: 16px;
+  color: #ffffff50;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: 200;
+  text-align: end;
+}
+.Show:hover {
+  text-decoration: underline;
+}
+#list{
+  visibility:hidden;
+}
+.photo {
+  height: 130px;
+}
+.album i{
+  position:absolute;
+  height: 40px;
+  width: 40px;
+  color: #000000;
+  background-color: #1FDF64;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 90px;
+  cursor: pointer;
+  visibility: hidden;
+}

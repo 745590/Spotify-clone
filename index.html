@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <div class="columb-a">
+    <div class="columb-a" >
         <div class="home">
             <img src="acd.png" alt="spotify">
             <div class="icon-a">
@@ -34,7 +34,7 @@
                 <p style="height: 25px;">It's easy , we'll help you</p>
                 <button >Create playlist</button>
             </div>
-                <div class="box">
+                <div class="box" style="height:160px">
                 <h3 >Let's find some podcasts to follow</h3>
                 <p style="height: 25px;margin-top: 20px;">We'll keep you updated on new episodes</p>
                 <button style="  margin-top: 20px;">Browse podcasts</button>
@@ -56,12 +56,113 @@
     </div>
     <div class="columb-b">
         <nav>
-            <div class="angle" style="height: 40px;width: 100px; display: flex;">
-                <i class="fa-solid fa-chevron-left" style="height: 40px; width: 40px;"></i>
+            <div class="angle" >
+                <i class="fa-solid fa-chevron-left"  ></i>
             <div class="angle">
-                <i class="fa-solid fa-chevron-right" style="height: 40px; width: 40px;"></i>
+                <i class="fa-solid fa-chevron-right"  ></i>
             </div>
+            <div class="navlink">
+            <a href="#">Premium</a>
+            <a href="#">Support</a>
+            <a href="#">Download</a>
+            <div style="border-left: 4px solid #6c6c6cf4; height: 30px; padding-left: 30px; border-bottom-left-radius: 4px; border-top-left-radius: 4px;">
+            <a href="#" style="display: flex; width: 100px;" >Sign up</a>
+        </div>
+        <div style="display: flex; align-items: center; padding-bottom: 20px;">
+        <button>Log in</button>
+    </div>
+        </div>
         </nav>
+        <div class="song" >
+            <div class="li">
+                <h2>Spotify Playlists</h2>
+                <button class="Show" id="sho" onclick="showall()" style="border: none; background-color: transparent; cursor: pointer;">Show all</button>
+            </div>
+            <div class="list">
+                <div class="album" onmouseover="showlink()" mouseout="hide()" style="margin-left: 40px;">
+                    <div class="photo">
+                <img src="ad.jpeg" alt="img" >
+                <i class="fa-solid fa-play"  ></i>
+            </div>
+            <h4> lofi beats</h4>
+            <p>chill beats, lofi vibes, new tracks every week</p>
+        </div>
+        <div class="album" onmouseover="showlink()" mouseout="hide()" >
+            <div class="photo">
+            <img src="ag.jpeg" alt="img" >
+            <i class="fa-solid fa-play" ></i>
+        </div>
+        <h4> Today's Top Hits</h4>
+        <p>Beyonce on top of the Hottest 50!</p>
+    </div>
+    <div class="album" onmouseover="showlink()" mouseout="hide()" >
+        <div class="photo">
+        <img src="R.jpeg" alt="img" >
+        <i class="fa-solid fa-play" ></i>
+    </div>
+    <h4> Chillout Lounge</h4>
+    <p>Just lean back and enjoy relaxed beats.</p>
+</div>
+<div class="album" onmouseover="showlink()" mouseout="hide()" >
+    <div class="photo">
+    <img src="339.jpg" alt="img">
+    <i class="fa-solid fa-play" ></i>
+</div>
+                <h4> All Out 2020s</h4>
+                <p>The biggest songs of the 2020s.</p>
+            </div>
+            <div class="album" onmouseover="showlink()" mouseout="hide()" >
+                <div class="photo">
+                <img src="ac.jpeg" alt="img" >
+                <i class="fa-solid fa-play"></i>
+            </div>
+                <h4> Jazz in the Backg...</h4>
+                <p>Soft instrumental jazz for all your activities.</p>
+            </div>
+        </div>
+            <div class="list" id="list">
+                <div class="album" onmouseover="showlink()" mouseout="hide()"  style="margin-left: 40px;">
+                    <div class="photo">
+                <img src="ad.jpeg" alt="img" >
+                <i class="fa-solid fa-play" ></i>
+            </div>
+            <h4> lofi beats</h4>
+            <p>chill beats, lofi vibes, new tracks every week</p>
+        </div>
+        <div class="album" onmouseover="showlink()" mouseout="hide()" >
+            <div class="photo">
+            <img src="ag.jpeg" alt="img" >
+            <i class="fa-solid fa-play" ></i>
+        </div>
+        <h4> Today's Top Hits</h4>
+        <p>Beyonce on top of the Hottest 50!</p>
+    </div>
+    <div class="album" onmouseover="showlink()" mouseout="hide()" >
+        <div class="photo">
+        <img src="R.jpeg" alt="img" >
+        <i class="fa-solid fa-play" ></i>
+    </div>
+    <h4> Chillout Lounge</h4>
+    <p>Just lean back and enjoy relaxed beats.</p>
+</div>
+<div class="album" onmouseover="showlink()" mouseout="hide()" >
+    <div class="photo">
+    <img src="339.jpg" alt="img">
+    <i class="fa-solid fa-play" ></i>
+</div>
+<h4> All Out 2020s</h4>
+<p>The biggest songs of the 2020s.</p>
+</div>
+<div class="album" onmouseover="showlink()" mouseout="hide()" >
+    <div class="photo">
+    <img src="ac.jpeg" alt="img" >
+    <i class="fa-solid fa-play" ></i>
+</div>
+                <h4> Jazz in the Backg...</h4>
+                <p>Soft instrumental jazz for all your activities.</p>
+            </div>
+        </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
